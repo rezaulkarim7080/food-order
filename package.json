@@ -1,0 +1,22 @@
+{
+  "name": "food-order",
+  "version": "1.0.0",
+  "description": "This an api for burger builder app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rezaul karim",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.6.6",
+    "morgan": "^1.10.0"
+  }
+}
