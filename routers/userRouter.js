@@ -8,8 +8,8 @@ const { result } = require("lodash");
 const router = express.Router();
 
 const newUser = async (req, res) => {
-  const { error } = validate(req.body);
-  if (error) return res.status(400).send(error.details[0].message);
+  const { error } = validate(req.body); /// joi packge check validate
+  if (error) return res.status(400).send(error.details[0].message); /// joi packge check validate
 
   let user = await User.findOne({ email: req.body.email });
   if (user) return res.status(400).send(" User already registered!");

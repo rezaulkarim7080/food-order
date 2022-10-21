@@ -29,4 +29,5 @@ const orderSchema = Schema({
   orderTime: { type: Date, default: Date.now },
 });
 
-module.exports.Order = ("Order", orderSchema);
+const Order = model("Order", orderSchema);
+module.exports.Order = Order;
